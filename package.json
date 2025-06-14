@@ -1,10 +1,6 @@
 {
   "name": "projeto-inmetrics",
   "version": "1.0.0",
-  "scripts": {
-    "cypress:pre": "npx @badeball/cypress-cucumber-preprocessor generate-types",
-    "test:ci": "npm run cypress:pre && cypress run --browser chrome --spec \"cypress/e2e/**/*.feature\""
-  },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.1.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
