@@ -1,0 +1,16 @@
+{
+    "existingProduct": {
+        "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE",
+        "id": 43,
+        "price": 1389,
+        "quantity": 1,
+        "category": "Tshirts",
+        "gender": "Men"
+    },
+    "nonExistentProduct": {
+        "name": "Basic T-Shirt",
+        "id": 9999,
+        "price": 4232,
+        "quantity": 1
+    }
+}
