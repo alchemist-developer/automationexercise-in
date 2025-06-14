@@ -4,6 +4,8 @@ const addCucumberPreprocessorPlugin = require('@badeball/cypress-cucumber-prepro
 const createEsbuildPlugin = require('@badeball/cypress-cucumber-preprocessor/esbuild').createEsbuildPlugin
 
 module.exports = defineConfig({
+  projectId: 'pronto-para-integrar-ci',
+  watchForFileChanges: false,
   e2e: {
     baseUrl: 'https://www.automationexercise.com',
     specPattern: 'cypress/e2e/**/*.feature',

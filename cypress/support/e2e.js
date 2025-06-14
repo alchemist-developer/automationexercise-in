@@ -1,0 +1,5 @@
+import './commands/apiCommands'
+import './commands/authCommands'
+import './commands/cartCommands'
+import './commands/productCommands'
+import './commands/navigateCommands'
