@@ -2,7 +2,9 @@ name: Cypress E2E - Inmetrics
 
 on:
   push:
-    branches: [ci/setup]
+    branches: [master]
+  pull_request:
+    branches: [master]
 
 jobs:
   e2e:
@@ -15,7 +17,7 @@ jobs:
       - name: Configuração do Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22.13.1'
+          node-version: "22.13.1"
 
       - name: Instala dependências
         run: npm ci
@@ -24,5 +26,5 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           browser: chrome
-          spec: 'cypress/e2e/**/*.feature'
+          spec: "cypress/e2e/**/*.feature"
           working-directory: ./
