@@ -18,7 +18,6 @@ Cypress.Commands.add('validateProductAddedToCartApi', (alias = 'existingProduct'
             url: '/view_cart',
         }).then(({ body }) => {
             const found = body.includes(id) && body.includes(name)
-
             expect(found, `${name}`).to.be.true
         })
     })
