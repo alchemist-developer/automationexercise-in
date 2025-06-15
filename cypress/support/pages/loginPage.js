@@ -24,8 +24,7 @@ export const loginPage = {
     },
 
     checkUserNameDisplayed(name) {
-        cy.contains(`Logged in as ${name}`)
-            .should('be.visible')
+        cy.contains(`Logged in as ${name}`).should('be.visible')
     },
 
     checkUrlIsNotLoginPage() {
